@@ -635,7 +635,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //判断当前是否为横屏
-    public boolean isLand() {
+    private boolean isLand() {
         Configuration mConfiguration = this.getResources().getConfiguration(); //获取设置的配置信息
         int ori = mConfiguration.orientation; //获取屏幕方向
         if (ori == mConfiguration.ORIENTATION_LANDSCAPE) {
